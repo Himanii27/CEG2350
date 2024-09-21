@@ -1,13 +1,13 @@
 ## Lab 03
 
-- Name:
-- Email
+- Name:Himani
+- Email:himani.3@wright.edu
 
 ## Part 1 Answers
 
 1. `ssh` command before configuring `config` file:
-2. HostName:
-3. User:
+2. HostName:2350
+3. User:ubuntu
 4. IdentityFile:
 5. `~/.ssh/config` contents:
 
@@ -16,22 +16,22 @@ Paste your config file entry here.  By placing it between these
 triple quote sets GitHub will make this look like a block of code
 ```
 
-6. `ssh` command after configuring an entry in the `config` file:
+6. `ssh` command after configuring an entry in the `config` file:ssh 2350
 
 ## Part 2 Answers
 
 1. `printenv HOME > thishouse`
-   - Explanation: 
+   - Explanation: saves path of the home directory in thishouse
 2. `cat doesnotexist 2>> hush.txt`
-   - Explanation: 
+   - Explanation: prints error in hush.txt
 3. `cat nums.txt | sort -n >> all_nums.txt`
-   - Explanation: 
+   - Explanation: stores the sorted nums in ascending order
 4. `cat << "DONE" > here.txt`
-   - Explanation: 
+   - Explanation: takes input in terminal and saves in here.txt
 5. `ls -lt ~ | head`
-   - Explanation: 
+   - Explanation: sort first 10 fikes of home directory
 6. `history | grep ".md"`
-   - Explanation: 
+   - Explanation: search for history with string .md
 
 ## Part 3
 
@@ -40,30 +40,30 @@ Verify that `roll` made it to your GitHub repository for this course and is in y
 ## Part 4 - Retrospective Answers
 
 1. Where and when did it go wrong while working on your script tasks?
-> Your reflection here
+> issues with inputs
 2. Was anything familiar working with a new language compared to one you are used to?
-> Your reflection here
+> loops and contidional statements
 3. Did you write good `commit` messages that refer to what tasks were completed at each commit?  What would you improve?
-> Your reflection here
+> yes
 
 ## Part 5 Answers
 
-1. PATH =
+1. PATH =echo $PATH
 2. To set condition to `true`, I need to...
-3. Command(s):
-4. PATH =
-   - Difference:
-5. Command(s):
-6. Commands & modification explanations: 
+3. Command(s):echo 'export PATH="/home/ubuntu/ceg2350f24-Himanii27/Lab03.$PATH"' >> ~/.profile
+4. PATH =echo $PATH
+   - Difference:there is a path now which was not there before
+5. Command(s):source ~/.profile
+6. Commands & modification explanations: it adds directory to path
 7. Script permission breakdown
    - User
-      - must be:
-      - has permissions to:
+      - must be: owner of the scripts
+      - has permissions to:execute
    - Group
-      - must be:
-      - has permissions to:
+      - must be:part of group owning the script
+      - has permissions to:execute 
    - Other
-      - has permissions to:
+      - has permissions to:execute
 
 ## Extra Credit
 
